@@ -27,13 +27,26 @@ var items = new vis.DataSet([
 
 // Configuration for the Timeline
 var options = {
-    width: '90%',
+    autoResize: true,
+    width: '95%',
     align: 'center',
     type:'point',
     showMajorLabels: false
-
 
 };
 
 // Create a Timeline
 var timeline = new vis.Timeline(container, items, options);
+
+
+//Slider for centring the timeline
+let sliderPos = document.getElementById('sliderPosition');
+let sliderVal = sliderPos.value;
+let sliderOutput = document.querySelector('output');
+
+sliderOutput.innerHTML = sliderVal;
+
+sliderPos.addEventListener('change', function(){
+    sliderOutput.innerHTML = sliderPos.value;
+})
+
