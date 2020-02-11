@@ -27,10 +27,15 @@ var items = new vis.DataSet([
 
 // Configuration for the Timeline
 var options = {
-    // autoResize: true,
-    width: '95%',
+    start: '-000401-01-01',
+    autoResize: true,
+    height: '500px',
+    width: '90%',
     align: 'center',
+    margin: { item: 20 },
     type:'point',
+    timeAxis: { scale: 'year', step: 50 },
+    hiddenDates: { start: '0100-01-01 00:00:00', end: '1000-01-01 00:00:00'  }
 };
 
 // Create a Timeline
@@ -62,8 +67,8 @@ function move(percentage) {
 }
 
 //link events to the nav buttons
-document.getElementById('zoomIn').onclick = function () { timeline.zoomIn(0.2); };
-document.getElementById('zoomOut').onclick = function () { timeline.zoomOut(0.2); };
+document.getElementById('zoomIn').onclick = function () { timeline.zoomIn(0.4); };
+document.getElementById('zoomOut').onclick = function () { timeline.zoomOut(0.4); };
 document.getElementById('moveLeft').onclick = function () { move(0.2); };
 document.getElementById('moveRight').onclick = function () { move(-0.2); };
 
