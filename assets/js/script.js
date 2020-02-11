@@ -27,26 +27,45 @@ var items = new vis.DataSet([
 
 // Configuration for the Timeline
 var options = {
-    autoResize: true,
+    // autoResize: true,
     width: '95%',
     align: 'center',
     type:'point',
-    showMajorLabels: false
-
 };
 
 // Create a Timeline
 var timeline = new vis.Timeline(container, items, options);
 
 
-//Slider for centring the timeline
-let sliderPos = document.getElementById('sliderPosition');
-let sliderVal = sliderPos.value;
-let sliderOutput = document.querySelector('output');
+// //Slider for centring the timeline
+// var slider = document.getElementById('sliderRange');
+// var sliderOutput = document.getElementById('sliderValue');
 
-sliderOutput.innerHTML = sliderVal;
+//     // write 'value' to the page
+//     sliderOutput.innerHTML = slider.value;
 
-sliderPos.addEventListener('change', function(){
-    sliderOutput.innerHTML = sliderPos.value;
-})
+//     // create event listener for value
+//     slider.oninput = function(){
+//         sliderOutput.innerHTML = this.value;
+//     }
+
+// Get the range of the current window and set the interval (for nav buttons)
+function move(percentage) {
+    var range = timeline.getWindow();
+    var interval = range.end - range.start;
+
+// Set the range of the window 
+    timeline.setWindow({
+        start: range.start.valueOf() - interval * percentage,
+        end: range.end.valueOf() - interval * percentage
+    });
+}
+
+//link events to the nav buttons
+document.getElementById('zoomIn').onclick = function () { timeline.zoomIn(0.2); };
+document.getElementById('zoomOut').onclick = function () { timeline.zoomOut(0.2); };
+document.getElementById('moveLeft').onclick = function () { move(0.2); };
+document.getElementById('moveRight').onclick = function () { move(-0.2); };
+
+
 
