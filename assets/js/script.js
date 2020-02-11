@@ -68,12 +68,21 @@ function setRange(a, b) {
 var handlesSlider = document.getElementById('rangeSlider');
 
 noUiSlider.create(handlesSlider, {
-    start: [4000, 8000],
+    start: [1700, 2020],
+    step: 10,
+    connect: true,
     range: {
-        'min': [2000],
-        'max': [10000]
+        'min': [-0400],
+        'max': [2025]
+
     }
 });
+
+// Reading slider values
+// rangeSlider.noUiSlider.get()
+
+
+
 
 // Get the range of the current window and set the interval (for nav buttons)
 function move(percentage) {
