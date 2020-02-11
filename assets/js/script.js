@@ -54,6 +54,27 @@ var timeline = new vis.Timeline(container, items, options);
 //         sliderOutput.innerHTML = this.value;
 //     }
 
+// Set range of timeline using range slider
+function setRange(a, b) {
+    timeline.setOptions({
+            start: '001500-01-01',
+            end: '001800-01-01'
+    });
+}
+
+// setRange(0015000101, 0018000101);
+
+// NoUISlider
+var handlesSlider = document.getElementById('rangeSlider');
+
+noUiSlider.create(handlesSlider, {
+    start: [4000, 8000],
+    range: {
+        'min': [2000],
+        'max': [10000]
+    }
+});
+
 // Get the range of the current window and set the interval (for nav buttons)
 function move(percentage) {
     var range = timeline.getWindow();

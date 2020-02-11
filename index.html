@@ -8,6 +8,7 @@
         <!-- Vis js -->
         <script src="assets/vis/vis.js"></script>
         <link rel="stylesheet" type="text/css" href="assets/vis/vis-timeline-graph2d.css">
+        <link href="assets/nouislider/nouislider.min.css" type="text/css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="assets/style.css">
     </head>
     <body>
@@ -16,13 +17,16 @@
             <input type="range" min="1" max="100" value="50" class="slider" id="sliderRange"> -->
             <!-- <p>Value: <span id="sliderValue"></span></p> -->
         </div>
+        <div id="rangeSlider">
+        </div>
         <div class="navMenu">
             <input type="button" id="zoomIn" value="Zoom in">
             <input type="button" id="zoomOut" value="Zoom out">
             <input type="button" id="moveLeft" value="Move left">
             <input type="button" id="moveRight" value="Move right">
         </div>
-
+        
+        <script src="assets/nouislider/nouislider.min.js"></script>
         <script src="assets/js/script.js"></script>
     </body>
 
