@@ -41,55 +41,13 @@ var options = {
 // Create a Timeline
 var timeline = new vis.Timeline(container, items, options);
 
-
-// //Slider for centring the timeline
-// var slider = document.getElementById('sliderRange');
-// var sliderOutput = document.getElementById('sliderValue');
-
-//     // write 'value' to the page
-//     sliderOutput.innerHTML = slider.value;
-
-//     // create event listener for value
-//     slider.oninput = function(){
-//         sliderOutput.innerHTML = this.value;
-//     }
-
-// Set range of timeline using range slider
-function setRange(a, b) {
-    timeline.setOptions({
-            start: '001500-01-01',
-            end: '001800-01-01'
-    });
-}
-
-// setRange(0015000101, 0018000101);
-
-// NoUISlider
-var handlesSlider = document.getElementById('rangeSlider');
-
-noUiSlider.create(handlesSlider, {
-    start: [1700, 2020],
-    step: 10,
-    connect: true,
-    range: {
-        'min': [-0400],
-        'max': [2025]
-
-    }
-});
-
-// Reading slider values
-// rangeSlider.noUiSlider.get()
-
-
-
-
-// Get the range of the current window and set the interval (for nav buttons)
+// Nav Buttons 
+// set the range of the current window and set the interval (for nav buttons)
 function move(percentage) {
     var range = timeline.getWindow();
     var interval = range.end - range.start;
 
-// Set the range of the window 
+// Set the range of the window (using zoom buttons)
     timeline.setWindow({
         start: range.start.valueOf() - interval * percentage,
         end: range.end.valueOf() - interval * percentage
@@ -102,5 +60,6 @@ document.getElementById('zoomOut').onclick = function () { timeline.zoomOut(0.4)
 document.getElementById('moveLeft').onclick = function () { move(0.2); };
 document.getElementById('moveRight').onclick = function () { move(-0.2); };
 
-
-
+//Set the Minimum and Maximum dates as input by the user
+var userStart = document.getElementById('userStart').value;
+var userEnd = document.getElementById('userEnd').value;

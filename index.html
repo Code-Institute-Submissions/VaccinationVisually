@@ -8,16 +8,10 @@
         <!-- Vis js -->
         <script src="assets/vis/vis.js"></script>
         <link rel="stylesheet" type="text/css" href="assets/vis/vis-timeline-graph2d.css">
-        <link href="assets/nouislider/nouislider.min.css" type="text/css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
     <body>
         <div id="visualization"></div>
-        <!-- <div class="sliderContainer">
-            <input type="range" min="1" max="100" value="50" class="slider" id="sliderRange"> -->
-            <!-- <p>Value: <span id="sliderValue"></span></p> -->
-        </div>
-        <div id="rangeSlider">
         </div>
         <div class="navMenu">
             <input type="button" id="zoomIn" value="Zoom in">
@@ -25,8 +19,13 @@
             <input type="button" id="moveLeft" value="Move left">
             <input type="button" id="moveRight" value="Move right">
         </div>
+        <div id="timeRange">
+            <label for="start">Start Date</label>
+            <input type="date" name="timelineStart" id="userStart" value="1700-01-01" min="1000-01-01" max="2030-01-01">
+            <label for="end">End Date</label>
+            <input type="date" name="timelineEnd" id="userEnd" value="2021-01-01" min="1000-01-01" max="2030-01-01">
+        </div>
         
-        <script src="assets/nouislider/nouislider.min.js"></script>
         <script src="assets/js/script.js"></script>
     </body>
 
