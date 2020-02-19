@@ -60,6 +60,22 @@ document.getElementById('zoomOut').onclick = function () { timeline.zoomOut(0.4)
 document.getElementById('moveLeft').onclick = function () { move(0.2); };
 document.getElementById('moveRight').onclick = function () { move(-0.2); };
 
-//Set the Minimum and Maximum dates as input by the user
-var userStart = document.getElementById('userStart').value;
-var userEnd = document.getElementById('userEnd').value;
+//Use the slider element to adjust the range
+// Using slider to zoomIn or zoomOut
+document.getElementById('rangeSlider').addEventListener('input', function (e) {
+    var value = this.value;
+    if (value < 0) {
+        var start = moment().year(moment().year() - 100000), // to adjust with options
+            end = moment().year(moment().year() + 1);
+        timeline.zoomOut(-value);
+        if (value === "-1") timeline.setWindow(start, end);
+    } else if (value > 0) {
+        var start = moment(),
+            end = moment(moment().utc() + 10);
+        timeline.zoomIn(value);
+        if (value === "1") timeline.setWindow(start, end);
+    } else {
+        timeline.fit(items.getIds());
+        this.value = 0;
+    }
+});
