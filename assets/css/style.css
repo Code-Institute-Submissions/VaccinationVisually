@@ -48,17 +48,25 @@ p {
     max-width: 50%;
 }
 
-.test {
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    border: 1px solid red;
+}
+
+.left-btn {
     width: auto;
-    display: inline-block;
-    overflow: auto;
-    white-space: nowrap;
-    margin: 0px auto;
-    border: 1px red solid;
+    border: 2px solid rgb(255, 81, 0);
+}
+
+.right-btn {
+    width: auto;
+    border: 2px solid rgb(255, 81, 0);
 }
 
 #visualization {
-    width: 70%;
+    width: 90%;
     background-image: url('/../assets/images/parchment.jpg');
     background-size: cover;
     background-position: center;
