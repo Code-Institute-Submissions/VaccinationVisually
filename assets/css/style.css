@@ -48,7 +48,17 @@ p {
     max-width: 50%;
 }
 
+.test {
+    width: auto;
+    display: inline-block;
+    overflow: auto;
+    white-space: nowrap;
+    margin: 0px auto;
+    border: 1px red solid;
+}
+
 #visualization {
+    width: 70%;
     background-image: url('/../assets/images/parchment.jpg');
     background-size: cover;
     background-position: center;
