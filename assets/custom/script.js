@@ -30,7 +30,7 @@ var options = {
     start: '-000401-01-01',
     autoResize: true,
     height: '500px',
-    width: '90%',
+    width: '100%',
     align: 'center',
     margin: { item: 20 },
     type:'point',
