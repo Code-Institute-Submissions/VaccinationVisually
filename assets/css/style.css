@@ -1,25 +1,51 @@
 :root {
-    
+    background-color: rgb(51, 25, 7);
+    color: rgb(247, 242, 228);
+    font-family: Cambria, Cochin, Georgia, Times,'Times New Roman', serif;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+/* set all elements to use box-sizing */
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* Add some flexbox config */
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column
+}
+
+.center {
+    justify-content: center;
+    align-items: center
+}
+
+.flex {
+    flex: 1
 }
 
 body {
-    font-family: Cambria,
-    Cochin,
-    Georgia,
-    Times,
-    'Times New Roman',
-    serif;
+    
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 3rem;
 }
 
 p {
-    font-size: 18px;
+    font-size: 1.25rem;
     line-height: 1.5em;
     margin: 1em auto;
-    max-width: 600px;
+    max-width: 50%;
 }
 
 #visualization {
