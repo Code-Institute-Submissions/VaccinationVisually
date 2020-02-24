@@ -50,19 +50,18 @@ p {
 
 .flexContainer {
     display: flex;
-    justify-content: space-between;
     height: auto;
-    border: 1px solid red;
+    border: none;
 }
 
 .left-btn {
     width: auto;
-    border: 2px solid rgb(255, 81, 0);
+    border: none;
 }
 
 .right-btn {
     width: auto;
-    border: 2px solid rgb(255, 81, 0);
+    border: none;
 }
 
 #visualization {
