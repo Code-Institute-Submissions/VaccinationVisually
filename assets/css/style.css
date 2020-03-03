@@ -80,14 +80,20 @@ p {
 /* Move left and move right buttons */
 .left-btn,
 .right-btn {
-    width: auto;
+    width: 4rem;
     border: 2px, solid, #FBBA72;
     background-color: #BB4D00;
+    background-image: url("../images/angle-right-solid.svg");
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .left-btn {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    background-image: url("../images/angle-left-solid.svg");
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 .right-btn {
@@ -95,6 +101,7 @@ p {
     border-bottom-right-radius: 10px;
 }
 
+/* Visualisation */
 #visualization {
     width: 95%;
     background-image: url("../images/parchment.jpg");
