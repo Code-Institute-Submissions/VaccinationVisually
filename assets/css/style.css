@@ -53,16 +53,46 @@ p {
     display: flex;
     height: auto;
     border: none;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Zoom buttons */
+.zoomButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#zoomIn,
+#zoomOut {
+    background-color: #BB4D00;
+    width: 8rem;
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(247, 242, 228);
+    border-radius: 5px;
+}
+
+/* Move left and move right buttons */
+.left-btn,
+.right-btn {
+    width: auto;
+    border: 2px, solid, #FBBA72;
+    background-color: #BB4D00;
 }
 
 .left-btn {
-    width: auto;
-    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .right-btn {
-    width: auto;
-    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 #visualization {
@@ -72,16 +102,19 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
 }
 
 /* Styling the range slider with compatibilty for all major browsers  (with help from css-tricks.com) */
+.timelineSlider {
+    text-align: center;
+}
+
 /* Apply base styling to override default appearance */
 input[type=range] {
     -webkit-appearance: none;
     margin: 18px 0;
-    width: 100%;
+    width: 95%;
 }
 
 input[type=range]:focus {
