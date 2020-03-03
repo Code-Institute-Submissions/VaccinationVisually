@@ -67,7 +67,7 @@ p {
 
 #visualization {
     width: 95%;
-    background-image: url('/../assets/images/parchment.jpg');
+    background-image: url("../images/parchment.jpg");
     background-origin: border-box;
     background-repeat: no-repeat;
     background-size: cover;
