@@ -65,7 +65,7 @@ document.getElementById('moveRight').onclick = function () { move(-0.2); };
 document.getElementById('rangeSlider').addEventListener('input', function (e) {
     var value = this.value;
     if (value < 0) {
-        var start = moment().year(moment().year() - 100000), // to adjust with options
+        var start = moment().year(moment().year() - 100000),
             end = moment().year(moment().year() + 1);
         timeline.zoomOut(-value);
         if (value === "-1") timeline.setWindow(start, end);
