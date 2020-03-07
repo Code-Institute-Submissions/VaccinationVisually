@@ -5,17 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>History of Vaccination Timeline</title>
-        <!-- Moment.js -->
+		<!-- Moment.js -->
         <script src="assets/moment/moment.js"></script>
         <!-- Vis js -->
         <script src="assets/vis/vis.js"></script>
         <link rel="stylesheet" type="text/css" href="assets/vis/vis-timeline-graph2d.css">
         <!-- Custom CSS -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <!-- handlebars (for template) -->
+        <!--Bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		type="text/css" />
+		<!-- handlebars (for template) -->
         <script src="assets/template/handlebars.min-v4.7.3.js"></script>
-
-
         <script id="item-template" type="text/x-handlebars-template">
             <table class="timelineItem">
               <tr>
@@ -23,11 +24,9 @@
               </tr>
             </table>
           </script>
-
-
-
     </head>
     <body>
+		
         <div id="intro">
             <h1>Vaccination, Visually</h1>
           <p>Learn about the history of vaccination with this interactive visual timeline. </p>
@@ -50,6 +49,13 @@
         </div>
         
         <script src="assets/js/script.js"></script>
+		<!--Popper and Bootstrap-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+		</script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+		</script>
     </body>
 
 </html>
