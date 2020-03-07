@@ -112,6 +112,13 @@ p {
     font-weight: bold;
 }
 
+.vis-item-content {
+    border-color: #acacac;
+    background-color: #FBBA72;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.3);
+    border-radius: 5px;
+}
+
 /* Styling the range slider with compatibilty for all major browsers  (with help from css-tricks.com) */
 .timelineSlider {
     text-align: center;

@@ -12,18 +12,27 @@
         <link rel="stylesheet" type="text/css" href="assets/vis/vis-timeline-graph2d.css">
         <!-- Custom CSS -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <!-- font awesome -->
-        <script src="https://kit.fontawesome.com/1b4d701f9e.js" crossorigin="anonymous"></script>
+        <!-- handlebars (for template) -->
+        <script src="assets/template/handlebars.min-v4.7.3.js"></script>
+
+
+        <script id="item-template" type="text/x-handlebars-template">
+            <table class="timelineItem">
+              <tr>
+                <td colspan="3" class="itemTitle">{{title}} {{itemDate}}</td>
+              </tr>
+            </table>
+          </script>
+
+
+
     </head>
     <body>
         <div id="intro">
             <h1>Vaccination, Visually</h1>
-            <p>Learn about the history of vaccination with this interactive visual timeline. Lucas ipsum dolor sit amet
-                su auril ryn bail zuggs skywalker kasan jerjerrod muzzer chistori. Darth ismaren disra vodran jagged
-                antilles. Nelvaanian kota bibble gallia. Duros carnor letaki greeata darth rahm illum. Tof san wroonian
-                kaminoan myneyrsh. Dantari salacious keyan fey'lya. Ackbar priapulin anomid aayla bria shado trioculus
-                padmé darth. Organa cb-99 khai bith rodian dunwell gorax. P'w'eck binks lars saffa haako mustafarian.
-                Aparo wol neimoidian doldur xappyh nahdar tatooine mace</p>
+          <p>Learn about the history of vaccination with this interactive visual timeline. </p>
+          <p>This project is an educational single-page website for those interested in the history of vaccination. I was inspired by the award-winning website www.historyofvaccines.org, provided by The College of Physicians of Philadelphia, which does a fantastic job of representing the known history of events related to vaccination in visual form.</p>
+            <p>Use the timeline's controls below, or drag to see various key events in the history of vaccines. You will learn about some of the breakthrough discoveries &amp; amazing scientists through history, and increase your knowledge about vaccines and the key role they play in public health.</p>
         </div>
         <div class="flexContainer">
             <input class="left-btn" type="button" id="moveLeft">
@@ -32,7 +41,7 @@
         </div>
 
         <div class="timelineSlider">
-            <input id="rangeSlider" type="range" name="range" class="range" name="a" min="-1" max="1" step="0.1" value="0">
+            <input id="rangeSlider" type="range" class="range" name="a" min="-1" max="1" step="0.1" value="0">
         </div>
         
         <div class="zoomButtons">
