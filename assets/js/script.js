@@ -1,32 +1,180 @@
+// handlebars template
+var source = document.getElementById('item-template').innerHTML;
+var template = Handlebars.compile(source);
+
 // DOM element where the Timeline will be attached
 var container = document.getElementById('visualization');
 
 // Create a DataSet (allows two way data-binding)
 var items = new vis.DataSet([
     {
-        "content": "<h1>The Father of Medicine</h1>",
-        "start": "-000400-01-01",
-        "id": 1
+        title: "The Father of Medicine",
+        description: "Hippocrates first identifies mumps, diphtheria, epidemic jaundice, and other conditions.",
+        itemDate: "400 BCE",
+        itemImage: "assets/images/hippocrates.jpg",
+        ref: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4659912/#B23",
+        start: "-000400-01-01",
+        id: 1
     },
-    { id: 2, content: 'item 2', start: '0010-04-14' },
-    { id: 3, content: 'item 3', start: '0100-04-18' },
-    { id: 4, content: 'item 4', start: '1000-04-16', end: '2013-04-19' },
-    { id: 5, content: 'item 5', start: '1500-04-25' },
-    { id: 6, content: 'item 6', start: '1800-06-27' },
-    { id: 7, content: 'item 7', start: '1800-09-27' },
-    { id: 8, content: 'item 8', start: '1802-01-27' },
-    { id: 9, content: 'item 9', start: '1804-04-27' },
-    { id: 10, content: 'item 10', start: '1820-04-27' },
-    { id: 11, content: 'item 11', start: '1825-04-27' },
-    { id: 12, content: 'item 12', start: '1850-04-27' },
-    { id: 13, content: 'item 13', start: '1851-04-27' },
-    { id: 14, content: 'item 14', start: '1900-04-27' },
-    { id: 15, content: 'item 15', start: '1920-04-27' },
-    { id: 16, content: 'item 16', start: '1950-04-27' }
+    { 
+        title: "Early Immunization",
+        description: "The earliest methods of immunization and protection against smallpox date back to about 1000 A.D., and are attributed to the Chinese. It has been said that the son of a Chinese statesman was inoculated against smallpox by blowing powdered smallpox sores into his nostrils. Another method used for inoculation was the removal of fluid from the pustules of an infected individual and subsequently rubbing it into a skin scratch of a healthy individual.",
+        itemDate: "1100 CE",
+        itemImage: "assets/images/hippocrates.jpg",
+        ref: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4659912/#B23", 
+        start: '0010-04-14', 
+        id: 2
+},
+    {
+        title: "Variolation Arrives in the West",
+        description: "The variolation process arrives in Turkey around 1672 CE.",
+        itemDate: "1672 CE",
+        itemImage: "assets/images/hippocrates.jpg",
+        ref: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4659912/#B23",
+        start: '1672-01-01',
+        id: 3
+    },
+    {
+        title: "Early Varioloation in Great Britain",
+        description: "ThIn the early 18th century, the varioloation process (known at that time as Inoculation), was introduced in Great Britain in order to help protect against smallpox.",
+        itemDate: "1721 CE",
+        itemImage: "assets/images/hippocrates.jpg",
+        ref: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4659912/#B23",
+        start: '1721-01-01',
+        id: 4
+    },
+    {
+        title: "Jenner's Breakthrough",
+        description: "Edward Jenner published his work on the development of a vaccination that would protect against smallpox. Two years earlier, in 1796, he had first speculated that protection from smallpox disease could be obtained through inoculation with a related virus, vaccinia or cowpox. He tested his theory on the 14th May 1796 by inoculating eight-year-old James Phipps with cowpox pustule liquid recovered from the hand of a milkmaid, Sarah Nelmes.",
+        itemDate: "1798 CE",
+        itemImage: "assets/images/hippocrates.jpg",
+        ref: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4659912/#B23",
+        start: '1798-01-01',
+        id: 5
+    },
+    {
+        title: "John Snow and the Broad St. Pump",
+        description: "John Snow, a leading British physician, formulated a theory that cholera could be spread via contaminated water or food.  An outbreak of the disease near Broad St., London, gave him the opportunity to prove this theory.  By recording the location of Cholera-related deaths, Snow was able to show that the majority were clustered around a water pump in the area.  He convinced officials to remove the pump handle, which helped control the epidemic, and in doing so, became the father of epidemiology.",
+        itemDate: "1854 CE",
+        itemImage: "assets/images/hippocrates.jpg",
+        ref: "https://www.immunology.org/john-snows-pump-1854",
+        start: '1854-01-01',
+        id: 6
+    },
+    {
+        title: "Germ Theory",
+        description: "Between 1860 and 1864, Louis Pasteur conducts many experiments to understand the relationship between germs and disease, which informed his proposal that microorganisms known as pathogens (germs) were the cause of disease. His thesis became known as the Germ Theory of Disease.",
+        itemDate: "1861 CE",
+        itemImage: "assets/images/hippocrates.jpg",
+        ref: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4659912/#B23",
+        start: '1861-01-01',
+        id: 7
+    },
+    {
+        title: "Spontaneous Generation Theory Disproven",
+        description: "Spontaneous Generation was a the theory that life could come from non-living materials such as earth or water; however, the French Academy of Science issued the challenge for any scientist to shed some light on this notion.  Louis Pasteur, who had been studying fermentation at the time, designed his now famous swan-neck experiment to disprove this theory. This apparatus allowed air into the flask, but prevented airborne organisms doing likewise.  He correctly predicted that the flasks would remain sterile as long as the neck remained in place, but if removed or broken, microorganisms would be allowed to enter, and permit microbial growth.",
+        itemDate: "1862 CE",
+        itemImage: "assets/images/hippocrates.jpg",
+        ref: "https://courses.lumenlearning.com/microbiology/chapter/spontaneous-generation/",
+        start: '1862-01-01',
+        id: 8
+    },
+    {
+        title: "Pasteur Begins His Work on Anthrax",
+        description: "Having started his investigations on Athrax in response to a recent outbreak, Pasteur presents a paper to the French Academy of Sciences on the subject, representing his first work in the field of medicine.",
+        itemDate: "1877 CE",
+        itemImage: "assets/images/hippocrates.jpg",
+        ref: "https://www.sciencehistory.org/historical-profile/louis-pasteur",
+        start: '1877-01-01',
+        id: 9
+    },
+    {
+        title: "First Bacterial Vaccine",
+        description: "Pasteur creates the first live attenuated vaccine for a bacterial illness, in this case, foul cholera. Having realised (by chance) that the bacterial cultures he was studying lost their virulence over time, Pasteur reasoned that the bacteria were diminished after exposure to oxygen. As a result, this dicsovery revolutionized work into infectious diseases, and kick-started the entire field of immunology.",
+        itemDate: "1879 CE",
+        itemImage: "assets/images/hippocrates.jpg",
+        ref: "https://www.vbivaccines.com/wire/louis-pasteur-attenuated-vaccine/",
+        start: '1879-01-01',
+        id: 10
+    },
+    {
+        title: "Work on Rabies Vaccine Begins",
+        description: "Having been sent a number of samples from dogs, Pasteur began working on a method to control Rabies.  Working with rabbits, Pasteur was able to radicaly shorten the period of time between infection and signs of symptoms.",
+        itemDate: "1880 CE",
+        itemImage: "assets/images/hippocrates.jpg",
+        ref: "https://www.sciencehistory.org/historical-profile/louis-pasteur",
+        start: '1880-01-01',
+        id: 11
+    },
+    {
+        title: "Pasteur's Public Anthrax Vaccine Study",
+        description: "Continuing his work into Anthrax, Louis Pasteur produced attenuated vaccines that could protect sheep and other animals, which he demonstrated in Pouill-Le-Fort. These high-profile public displays featured cows, sheep and goats, and showed that while almost all infected animals died, the vaccinated animals survived.",
+        itemDate: "1881 CE",
+        itemImage: "assets/images/hippocrates.jpg",
+        ref: "https://www.sciencehistory.org/historical-profile/louis-pasteur",
+        start: '1881-05-01',
+        id: 12
+    },
+    {
+        title: "Robert Koch Identifies Tubercolosis",
+        description: "Robert Koch identifies the mycobacterium tuberculosis.  Convinced that tuberculosis (known as consumption at that time) was caused by an infectious bacterium, he developed four postulates to test his theory. Through his work with guinea pigs, he found that these postulates were satisfied and published his findings at the Berlin Physiological Society on March 24th, 1882.",
+        itemDate: "1882 CE",
+        itemImage: "assets/images/hippocrates.jpg",
+        ref: "https://www.cdc.gov/mmwr/preview/mmwrhtml/00000222.htm",
+        start: '1882-01-01',
+        id: 13
+    },
+    {
+        title: "First Viral Vaccine",
+        description: "Louis Pasteur develops the first live attenuated viral vaccine by using dried brain tissue inactivated with formaldehyde, thus providing immunity to rabies for dogs.",
+        itemDate: "1884 CE",
+        itemImage: "assets/images/hippocrates.jpg",
+        ref: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4659912/",
+        start: '1884-01-01',
+        id: 14
+    },
+    {
+        title: "Koch Identifies the Comma Bacillus",
+        description: "Louis Pasteur develops ",
+        itemDate: "1884 CE",
+        itemImage: "assets/images/hippocrates.jpg",
+        ref: "https://www.sciencedirect.com/science/article/pii/S1198743X14608557",
+        start: '1884-03-01',
+        id: 15
+    },
+    {
+        title: "Rabies Vaccine Used to Treat Humans",
+        description: "In the 19th century, there was extensive research into cholera, and by 1883, Robert Koch had isolated it in culture; however, this was in fact the second time the organism had been identified, as Filippo Pacini had previously discovered it in 1854, albeit remaining largely unknown.",
+        itemDate: "1885 CE",
+        itemImage: "assets/images/hippocrates.jpg",
+        ref: "https://www.the-scientist.com/foundations/the-rabies-vaccine-backstory-33441?archived_content=9BmGYHLCH6vLGNdd9YzYFAqV8S3Xw3L5",
+        start: '1885-06-01',
+        id: 16
+    },
+    {
+        title: "First Diptheria Treatments",
+        description: "Shibasaburo Kitasato and Emil von Behring, using a heat-treated diphtheria toxin, immunized guinea pigs against diptheria toxin.  Von Behring would later go on to win the first ever Nobel prize in medicine for his work on diptheria.",
+        itemDate: "1890 CE",
+        itemImage: "assets/images/hippocrates.jpg",
+        ref: "https://jnnp.bmj.com/content/71/1/62",
+        start: '1890-01-01',
+        id: 17
+    },
+    {
+        title: "Chickenpox and Shingles Linked",
+        description: "Hungarian pediatrician James Bokay described cases of individuals who had contracted chickenpox after coming in contact with shingles.  This connection was not confirmed for almost thirty years when Kundratitz demonstrated that inoculating children with fluid from shingles patients resulted in chickenpox.",
+        itemDate: "1892 CE",
+        itemImage: "assets/images/hippocrates.jpg",
+        ref: "https://www.historyofvaccines.org/content/chickenpox-relationship-between-chickenpox-and-shingles-suggested",
+        start: '1892-05-01',
+        id: 18
+    },
+
 ]);
 
 // Configuration for the Timeline
 var options = {
+    template: template,
     start: '-000401-01-01',
     autoResize: true,
     height: '500px',
@@ -34,7 +182,7 @@ var options = {
     align: 'center',
     margin: { item: 20 },
     type:'point',
-    timeAxis: { scale: 'year', step: 50 },
+    timeAxis: { scale: 'year', step: 25 },
     hiddenDates: { start: '0100-01-01 00:00:00', end: '1000-01-01 00:00:00'  }
 };
 
@@ -42,7 +190,7 @@ var options = {
 var timeline = new vis.Timeline(container, items, options);
 
 // Nav Buttons 
-// set the range of the current window and set the interval (for nav buttons)
+// set the range of the current window and set the interval
 function move(percentage) {
     var range = timeline.getWindow();
     var interval = range.end - range.start;
