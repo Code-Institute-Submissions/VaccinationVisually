@@ -69,6 +69,10 @@ p {
     font-size: 1rem;
 }
 
+/*Main Viewer*/
+.mainViewer {
+/*  background-color: #331907;*/
+}
 /* Zoom buttons */
 .zoomButtons {
     display: flex;
