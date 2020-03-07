@@ -57,10 +57,16 @@ p {
     margin: 0 auto;
 }
 
-/* Bootstrap */
+/* Bootstrap Overrides */
 .jumbotron {
 	background: #691E06;
 	color: #F7F2E4;
+}
+
+.navbar-nav {
+	font-family: Cambria, Cochin, Georgia, Times,'Times New Roman', serif;
+    line-height: 1.5;
+    font-size: 1rem;
 }
 
 /* Zoom buttons */
