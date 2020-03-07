@@ -57,6 +57,12 @@ p {
     margin: 0 auto;
 }
 
+/* Bootstrap */
+.jumbotron {
+	background: #691E06;
+	color: #F7F2E4;
+}
+
 /* Zoom buttons */
 .zoomButtons {
     display: flex;
