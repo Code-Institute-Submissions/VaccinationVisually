@@ -243,3 +243,31 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
     background: rgb(226, 99, 8);
 }
+
+/* cards */
+.card {
+    background-color: rgb(222, 155, 85);
+        font-family: Cambria,
+        Cochin,
+        Georgia,
+        Times,
+        'Times New Roman',
+        serif;
+}
+
+.card-header {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.card-body {
+    background-color: rgb(247, 242, 229);
+}
+
+.card-footer {
+    font-size: 2rem;
+}
+
+.card-text {
+    font-size: 2rem;
+}

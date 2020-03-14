@@ -233,12 +233,19 @@ timeline.on('select', function (properties) {
     var itemID = properties.items[0];
     var clickedItem = items.get(itemID);
     console.log(clickedItem);
+    var viewTitle = clickedItem['title'];
     var viewDesc = clickedItem['description'];
     var viewDate = clickedItem['itemDate'];
     var viewImg = clickedItem['itemImage'];
     var viewLink = clickedItem['ref'];
+    console.log(viewTitle);
     console.log(viewDesc);
     console.log(viewDate);
     console.log(viewImg);
     console.log(viewLink);
+
+    document.getElementById('viewerTitle').innerHTML = viewTitle;
+    document.getElementById('viewerDesc').innerHTML = viewDesc;
+    document.getElementById('viewerDate').innerHTML = viewDate;
+
 });
