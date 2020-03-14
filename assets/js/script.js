@@ -227,3 +227,9 @@ document.getElementById('rangeSlider').addEventListener('input', function (e) {
         this.value = 0;
     }
 });
+
+// Listen for a item to be selected
+timeline.on('select', function (properties) {
+alert(properties.event.firstTarget.innerText);
+
+});

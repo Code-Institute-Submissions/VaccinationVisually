@@ -5,17 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>History of Vaccination Timeline</title>
-        <!-- Moment.js -->
+		<!-- Moment.js -->
         <script src="assets/moment/moment.js"></script>
         <!-- Vis js -->
         <script src="assets/vis/vis.js"></script>
         <link rel="stylesheet" type="text/css" href="assets/vis/vis-timeline-graph2d.css">
-        <!-- Custom CSS -->
+        <!--Bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    type="text/css" />
+    <!-- Jquery -->
+    <!-- <script src="jquery-3.4.1.min.js"></script> -->
+		<!-- Custom CSS -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <!-- handlebars (for template) -->
+		<!-- handlebars (for template) -->
         <script src="assets/template/handlebars.min-v4.7.3.js"></script>
-
-
         <script id="item-template" type="text/x-handlebars-template">
             <table class="timelineItem">
               <tr>
@@ -23,19 +26,57 @@
               </tr>
             </table>
           </script>
-
-
-
     </head>
     <body>
+	<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#">VaccinationVisually</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Collaborate</a>
+      </li>      
+	  <li class="nav-item">
+        <a class="nav-link" href="#">References</a>
+      </li>
+   </ul>
+  </div>
+</nav>
         <div id="intro">
-            <h1>Vaccination, Visually</h1>
-          <p>Learn about the history of vaccination with this interactive visual timeline. </p>
-          <p>This project is an educational single-page website for those interested in the history of vaccination. I was inspired by the award-winning website www.historyofvaccines.org, provided by The College of Physicians of Philadelphia, which does a fantastic job of representing the known history of events related to vaccination in visual form.</p>
-            <p>Use the timeline's controls below, or drag to see various key events in the history of vaccines. You will learn about some of the breakthrough discoveries &amp; amazing scientists through history, and increase your knowledge about vaccines and the key role they play in public health.</p>
+            <div class="jumbotron jumbotron-fluid">
+            	<h1>Vaccination, Visually</h1>
+          		<p>Learn about the history of vaccination with this interactive visual timeline. </p>
+          		<p>This project is an educational single-page website for those interested in the history of vaccination. I was inspired by the award-winning website www.historyofvaccines.org, provided by The College of Physicians of Philadelphia, which does a fantastic job of representing the known history of events related to vaccination in visual form.</p>
+            	<p>Use the timeline's controls below, or drag to see various key events in the history of vaccines. You will learn about some of the breakthrough discoveries &amp; amazing scientists through history, and increase your knowledge about vaccines and the key role they play in public health.</p>
+            </div>
         </div>
+<div class="flexContainer mainViewer">
+  <div class="card card-img-top mb-3 text-center">
+    <!-- featured card         -->
+    <div class="card-header">
+      Title
+    </div>
+<div class="card" style="width: 18rem;"> 
+  <img class="card-img-top" src="..." alt="Card image">
+  <div class="card-body">
+    <p class="card-text">Subtitle</p>
+  </div>
+</div>
+    <div class="card-body">
+      <h5 class="card-title">titleText</h5> 
+      <!-- put template here -->
+      <p class="card-text">descriptionText</p>
+    </div>
+    <div class="card-footer text-muted">Footer</div>
+  </div>
+</div>
         <div class="flexContainer">
-            <input class="left-btn" type="button" id="moveLeft">
+          <input class="left-btn" type="button" id="moveLeft">
             <div id="visualization"></div>
             <input class="right-btn" type="button" id="moveRight">
         </div>
@@ -43,13 +84,18 @@
         <div class="timelineSlider">
             <input id="rangeSlider" type="range" class="range" name="a" min="-1" max="1" step="0.1" value="0">
         </div>
-        
         <div class="zoomButtons">
             <input type="button" id="zoomIn" value="Zoom in">
             <input type="button" id="zoomOut" value="Zoom out">
-        </div>
-        
+        </div>   
         <script src="assets/js/script.js"></script>
+		<!--Popper and Bootstrap-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+		</script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+		</script>
     </body>
 
 </html>
