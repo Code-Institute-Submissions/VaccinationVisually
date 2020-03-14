@@ -69,10 +69,11 @@ p {
     font-size: 1rem;
 }
 
-/*Main Viewer*/
-.mainViewer {
-/*  background-color: #331907;*/
+/* Main Viewer */
+.mainViewer { 
+  background-color: #331907;
 }
+
 /* Zoom buttons */
 .zoomButtons {
     display: flex;
@@ -156,7 +157,7 @@ input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
     height: 8.4px;
     cursor: pointer;
-    animate: 0.2s;
+    /* animation-timing-function: 0.2s; */
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     background: #BB4D00;
     border-radius: 1.3px;
@@ -183,7 +184,7 @@ input[type=range]::-moz-range-track {
     width: 100%;
     height: 8.4px;
     cursor: pointer;
-    animate: 0.2s;
+    /* animation-timing-function: 0.2s; */
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     background: #BB4D00;
     border-radius: 1.3px;
@@ -204,7 +205,7 @@ input[type=range]::-ms-track {
     width: 100%;
     height: 8.4px;
     cursor: pointer;
-    animate: 0.2s;
+    /* animation-timing-function: 0.2s; */
     background: transparent;
     border-color: transparent;
     border-width: 16px 0;

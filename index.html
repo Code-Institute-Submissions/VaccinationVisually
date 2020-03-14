@@ -12,7 +12,9 @@
         <link rel="stylesheet" type="text/css" href="assets/vis/vis-timeline-graph2d.css">
         <!--Bootstrap -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		type="text/css" />
+    type="text/css" />
+    <!-- Jquery -->
+    <!-- <script src="jquery-3.4.1.min.js"></script> -->
 		<!-- Custom CSS -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 		<!-- handlebars (for template) -->
@@ -52,21 +54,27 @@
           		<p>This project is an educational single-page website for those interested in the history of vaccination. I was inspired by the award-winning website www.historyofvaccines.org, provided by The College of Physicians of Philadelphia, which does a fantastic job of representing the known history of events related to vaccination in visual form.</p>
             	<p>Use the timeline's controls below, or drag to see various key events in the history of vaccines. You will learn about some of the breakthrough discoveries &amp; amazing scientists through history, and increase your knowledge about vaccines and the key role they play in public health.</p>
             </div>
-
         </div>
-		<div class="container-fluid mainViewer">
-			<div class="card mb-3" style="max-width: 540px;">
-  <div class="row no-gutters">
-    <div class="col-md-4"> <img src="..." class="card-img" alt="..."> </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title"></h5>
-        <p class="card-text"></p>
-      </div>
+<div class="flexContainer mainViewer">
+  <div class="card card-img-top mb-3 text-center">
+    <!-- featured card         -->
+    <div class="card-header">
+      Title
     </div>
+<div class="card" style="width: 18rem;"> 
+  <img class="card-img-top" src="..." alt="Card image">
+  <div class="card-body">
+    <p class="card-text">Subtitle</p>
   </div>
 </div>
-		</div>
+    <div class="card-body">
+      <h5 class="card-title">titleText</h5> 
+      <!-- put template here -->
+      <p class="card-text">descriptionText</p>
+    </div>
+    <div class="card-footer text-muted">Footer</div>
+  </div>
+</div>
         <div class="flexContainer">
           <input class="left-btn" type="button" id="moveLeft">
             <div id="visualization"></div>
@@ -76,12 +84,10 @@
         <div class="timelineSlider">
             <input id="rangeSlider" type="range" class="range" name="a" min="-1" max="1" step="0.1" value="0">
         </div>
-        
         <div class="zoomButtons">
             <input type="button" id="zoomIn" value="Zoom in">
             <input type="button" id="zoomOut" value="Zoom out">
-        </div>
-        
+        </div>   
         <script src="assets/js/script.js"></script>
 		<!--Popper and Bootstrap-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
