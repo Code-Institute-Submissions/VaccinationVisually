@@ -36,7 +36,7 @@ var items = new vis.DataSet([
     },
     {
         title: "Early Varioloation in Great Britain",
-        description: "ThIn the early 18th century, the varioloation process (known at that time as Inoculation), was introduced in Great Britain in order to help protect against smallpox.",
+        description: "In the early 18th century, the varioloation process (known at that time as Inoculation), was introduced in Great Britain in order to help protect against smallpox.",
         itemDate: "1721 CE",
         itemImage: "assets/images/hippocrates.jpg",
         ref: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4659912/#B23",
@@ -228,8 +228,17 @@ document.getElementById('rangeSlider').addEventListener('input', function (e) {
     }
 });
 
-// Listen for a item to be selected
+// Listen for a item to be selected and get it's properties
 timeline.on('select', function (properties) {
-alert(properties.event.firstTarget.innerText);
-
+    var itemID = properties.items[0];
+    var clickedItem = items.get(itemID);
+    console.log(clickedItem);
+    var viewDesc = clickedItem['description'];
+    var viewDate = clickedItem['itemDate'];
+    var viewImg = clickedItem['itemImage'];
+    var viewLink = clickedItem['ref'];
+    console.log(viewDesc);
+    console.log(viewDate);
+    console.log(viewImg);
+    console.log(viewLink);
 });

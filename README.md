@@ -1,13 +1,13 @@
 # Vaccination, Visually
  History of vaccination displayed as a timeline
 
- [See the live demo here:](https://ronanmc99.github.io/VaccinationVisually/)
+ [See the live demo here](https://ronanmc99.github.io/VaccinationVisually/)
  
  This project is an educational single-page website for those interested in the history of vaccination.  I was inspired by the award-winning website www.historyofvaccines.org, provided by The College of Physicians of Philadelphia, which does a fantastic job of representing the known history of events related to vaccination in visual form. 
 
 My aim was to provide an interactive timeline similar to the above.  This allows the user to see the key events in the history of vaccines, learn about some of the discoveries & people involved, and in doing so, increase their knowledge and understanding of how vaccines work and the role they play in public health.
 
-##Project requirements
+## Project requirements
 
 1. Users are able to interact with the site in their particular way, to achieve their personal goals and derive answers to their specific questions.
 
@@ -16,7 +16,7 @@ My aim was to provide an interactive timeline similar to the above.  This allows
 Main Technologies:
 Required: HTML, CSS, JavaScript
 
-###Libraries:
+### Libraries:
 
 [Vis.js - this provides an interactive chart for visualising data on a timeline.](https://visjs.github.io/)
 
@@ -26,7 +26,7 @@ Required: HTML, CSS, JavaScript
 
 Data are stored in a JSON object with options configured in the vis timeline custom js.
 
-###Use Cases
+### Use Cases
 As a student of Biomedical Science, I have recently become very interested in vaccination and recognise that a resource like this can be very useful to other students, parents of young children and educators in this field.
 
 Possible use cases include:
@@ -35,7 +35,7 @@ Students who are preparing to write a research paper and want both an overview o
 Teachers or lecturers who are teaching students about vaccination and the key events that occurred during its history.
 Parents who are interested in vaccination as it relates to their children and want to understand the subject more deeply.
 
-##UX
+## UX
 -The user experience is about communicating information about the history of vaccination in a clear and simple way so that it can be a useful educational resource.
 
 -The experience should make it very easy for me to interact with the data - for example, scrolling through the timeline, clicking on an item to learn more about it, or to filter events.  
@@ -62,15 +62,15 @@ Parents who are interested in vaccination as it relates to their children and wa
 
 Design - using these requirements, a wireframe was created in Balsamiq mockups 3, then a colour scheme was chosen before creating a prototype in Sketch.
 
-##Installation
+## Installation
 
-##Contribution
+## Contribution
 
 I would like to develop this project in the future to make it more useful for students and teachers.  If you would like to make a code contribution, a user-experience contribution, or suggest new timeline items, please contact me at:
 
-##Guides / Resources
+## Guides / Resources
 
-##References and Credits
+## References and Credits
 
 ### Content
 
