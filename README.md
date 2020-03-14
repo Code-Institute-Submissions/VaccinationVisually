@@ -1,5 +1,7 @@
 # Vaccination, Visually
  History of vaccination displayed as a timeline
+
+ [See the live demo here:](https://ronanmc99.github.io/VaccinationVisually/)
  
  This project is an educational single-page website for those interested in the history of vaccination.  I was inspired by the award-winning website www.historyofvaccines.org, provided by The College of Physicians of Philadelphia, which does a fantastic job of representing the known history of events related to vaccination in visual form. 
 
