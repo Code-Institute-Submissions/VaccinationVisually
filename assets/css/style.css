@@ -61,21 +61,22 @@ p {
         serif;
 }
 
-#intro {
-    align-content: center;
+.introTextBlock {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 1% auto;
+    font-family: Cambria,
+        Cochin,
+        Georgia,
+        Times,
+        'Times New Roman',
+        serif;
+    max-width: 60%;
     text-align: center;
     background-color: #691E06;
     color: #F7F2E4;
 }
-
-/* Bootstrap Overrides */
-/* .jumbotron {
-    max-width: 80%;
-	background: #691E06;
-    color: #F7F2E4;
-    text-align: center;
-        border: 5px solid red;
-} */
 
 .navbar-nav {
 	font-family: Cambria, Cochin, Georgia, Times,'Times New Roman', serif;
@@ -271,18 +272,13 @@ input[type=range]:focus::-ms-fill-upper {
 
 .card-columns {
     columns: 2;
+    column-gap: 0.5 rem;
 }
 
 .card-title {
     font-size: 2rem; 
     font-weight: bold;
 }
-
-/* .card-img-top {
-    width: 100%;
-    background-color: rgb(247, 242, 229);
-    border-radius: 10px;
-} */
 
 .card-body {
     display: inline-block;
