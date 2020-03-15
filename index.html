@@ -55,19 +55,24 @@
             	<p>Use the timeline's controls below, or drag to see various key events in the history of vaccines. You will learn about some of the breakthrough discoveries &amp; amazing scientists through history, and increase your knowledge about vaccines and the key role they play in public health.</p>
             </div>
         </div>
-<!-- Item Viewer        -->
-<div class="flexContainer mainViewer">
-  <div class="card card-img-top mb-3 text-center">
-    <div class="card-header" id="viewerTitle"></div>
-    <div class="card" style="width: 18rem;"> 
-      <img class="card-img-top" src="../assets/images/hippocrates.jpg" alt="Card image">
-    </div>
-    <div class="card-body">
-      <p class="card-text" id="viewerDesc"></p>
-    </div>
-    <div class="card-footer text-uppercase" id="viewerDate"></div>
-  </div>
-</div>
+<!-- RMC - Add a down arrow and 1 sentance of instruction  -->
+
+<!-- Main Timeline Visulisation-->
+<!-- Item Viewer -->
+        <div class="flexContainer">
+          <div class="card-columns text-center">
+              <div class="card" id="itemImage">
+                <img src="../assets/images/hippocrates.jpg" alt="Card image">
+              </div>
+            <div class="card-body">
+              <h1 class="card-title" id="viewerTitle">Card title</h1>
+              <p class="card-text desc-text" id="viewerDesc"></p>
+              <a href="#" target="_blank" class="btn  btn-lg btn-outline-warning link-button role=" button"">Read More ( in new window )</a>
+              <div class="card-footer text-uppercase" id="viewerDate"></div>
+            </div>
+          </div>
+        </div>
+<!-- Timeline -->
         <div class="flexContainer">
           <input class="left-btn" type="button" id="moveLeft">
             <div id="visualization"></div>
