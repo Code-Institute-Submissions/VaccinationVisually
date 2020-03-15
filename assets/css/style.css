@@ -45,8 +45,6 @@ h1 {
 p {
     font-size: 1.25rem;
     line-height: 1.5em;
-    margin: auto;
-    max-width: 50%;
 }
 
 .flexContainer {
@@ -63,11 +61,21 @@ p {
         serif;
 }
 
-/* Bootstrap Overrides */
-.jumbotron {
-	background: #691E06;
-	color: #F7F2E4;
+#intro {
+    align-content: center;
+    text-align: center;
+    background-color: #691E06;
+    color: #F7F2E4;
 }
+
+/* Bootstrap Overrides */
+/* .jumbotron {
+    max-width: 80%;
+	background: #691E06;
+    color: #F7F2E4;
+    text-align: center;
+        border: 5px solid red;
+} */
 
 .navbar-nav {
 	font-family: Cambria, Cochin, Georgia, Times,'Times New Roman', serif;
@@ -265,8 +273,8 @@ input[type=range]:focus::-ms-fill-upper {
     columns: 2;
 }
 
-.card-header {
-    font-size: 1rem;
+.card-title {
+    font-size: 2rem; 
     font-weight: bold;
 }
 
@@ -284,7 +292,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .card-footer {
     background-color: rgb(247, 242, 229);
-    padding: 30px;
+    padding: 10px;
     margin: 30px;
     font-size: 1.75rem;
     font-weight: bold;
@@ -292,6 +300,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .desc-text {
     font-size: 1.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .link-button {
