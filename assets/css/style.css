@@ -272,6 +272,9 @@ input[type=range]:focus::-ms-fill-upper {
 .card-columns {
     columns: 2;
     column-gap: 0.5 rem;
+    background-color: rgb(247, 242, 229);
+    border: hidden;
+    border-radius: 10px;
 }
 
 .card-title {
@@ -283,18 +286,20 @@ input[type=range]:focus::-ms-fill-upper {
     display: inline-block;
     background-color: rgb(247, 242, 229);
     border-radius: 10px;
+    border: hidden;
 }
 
 .card-footer {
     background-color: rgb(247, 242, 229);
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: none;
     font-size: 1.1rem;
     font-weight: bold;
+    border: hidden;
 }
 
 .desc-text {
-    font-size: 1rem;
+    font-size: 1.25rem;
     padding-bottom: 0.5rem;
 }
 
@@ -304,8 +309,10 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 #itemImage {
+    margin-top: 10px;
     background-color: rgb(247, 242, 229);
     border-radius: 10px;
+    border: hidden;
 }
 
 /* Add scrollbar for item viewer description card */
