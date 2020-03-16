@@ -29,7 +29,7 @@ var items = new vis.DataSet([
         title: "Variolation Arrives in the West",
         description: "The variolation process arrives in Turkey around 1672 CE.",
         itemDate: "1672 CE",
-        itemImage: "assets/images/hippocrates.jpg",
+        itemImage: "assets/images/chickenpox.jpg",
         ref: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4659912/#B23",
         start: '1672-01-01',
         id: 3
@@ -247,5 +247,6 @@ timeline.on('select', function (properties) {
     document.getElementById('viewerTitle').innerHTML = viewTitle;
     document.getElementById('viewerDesc').innerHTML = viewDesc;
     document.getElementById('viewerDate').innerHTML = viewDate;
+    document.getElementById('imageSrc').src = viewImg;
 
 });
