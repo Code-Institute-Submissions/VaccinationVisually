@@ -72,7 +72,7 @@ var items = new vis.DataSet([
     },
     {
         title: "Spontaneous Generation Theory Disproven",
-        description: "Spontaneous Generation was a the theory that life could come from non-living materials such as earth or water; however, the French Academy of Science issued the challenge for any scientist to shed some light on this notion.  Louis Pasteur, who had been studying fermentation at the time, designed his now famous swan-neck experiment to disprove this theory. This apparatus allowed air into the flask, but prevented airborne organisms doing likewise.  He correctly predicted that the flasks would remain sterile as long as the neck remained in place, but if removed or broken, microorganisms would be allowed to enter, and permit microbial growth.",
+        description: "Spontaneous Generation was a the theory that life could come from non-living materials such as earth or water; however, the French Academy of Science issued the challenge for any scientist to shed some light on this notion.  Louis Pasteur, who had been studying fermentation at the time, designed his now famous swan-neck experiment to disprove this theory. This apparatus allowed air into the flask, but prevented airborne organisms doing likewise.  He correctly predicted that the flasks would remain sterile as long as the neck remained in place, but if removed or broken, microorganisms would be allowed to enter, and permit microbial growth.Spontaneous Generation was a the theory that life could come from non-living materials such as earth or water; however, the French Academy of Science issued the challenge for any scientist to shed some light on this notion.  Louis Pasteur, who had been studying fermentation at the time, designed his now famous swan-neck experiment to disprove this theory. This apparatus allowed air into the flask, but prevented airborne organisms doing likewise.  He correctly predicted that the flasks would remain sterile as long as the neck remained in place, but if removed or broken, microorganisms would be allowed to enter, and permit microbial growth.",
         itemDate: "1862 CE",
         itemImage: "assets/images/hippocrates.jpg",
         ref: "https://courses.lumenlearning.com/microbiology/chapter/spontaneous-generation/",
@@ -248,5 +248,6 @@ timeline.on('select', function (properties) {
     document.getElementById('viewerDesc').innerHTML = viewDesc;
     document.getElementById('viewerDate').innerHTML = viewDate;
     document.getElementById('imageSrc').src = viewImg;
-
+    document.getElementById('refbutton').href = viewLink;
+    
 });
