@@ -306,6 +306,7 @@ input[type=range]:focus::-ms-fill-upper {
     background-color: rgb(247, 242, 229);
     border: hidden;
     border-radius: 10px;
+
 }
 
 .card-title {
@@ -317,18 +318,15 @@ input[type=range]:focus::-ms-fill-upper {
     display: inline-block;
     margin-left: 0px;
     justify-content: right;
-    background-color: rgb(247, 242, 229);
+    background-color: rgb(242, 168, 94);
     border-radius: 10px;
     border: hidden;
 }
 
-.card-footer {
-    background-color: rgb(247, 242, 229);
-    padding: 5px;
-    margin: none;
+#viewerDate {
     font-size: 1.1rem;
     font-weight: bold;
-    border: hidden;
+    margin-bottom: 5px;
 }
 
 .desc-text {
@@ -343,18 +341,14 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 #itemImage {
-    margin-top: 10px;
-    background-color: rgb(247, 242, 229);
-    border-radius: 10px;
+    /* padding-top: 0px !important;
+    background-color: rgb(105, 30, 6); */
     border: hidden;
 }
 
 #itemImage > img {
-    padding-top: 10px;
-    justify-self: auto;
-    margin-right: -10%;
+    border-radius: 10px;
 }
-
 
 
 /* Add scrollbar for item viewer description card */
