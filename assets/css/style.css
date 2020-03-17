@@ -319,8 +319,12 @@ input[type=range]:focus::-ms-fill-upper {
     margin-left: 0px;
     justify-content: right;
     background-color: rgb(242, 168, 94);
-    border-radius: 10px;
+    /* border-radius: 10px; */
     border: hidden;
+}
+
+#descriptionBlock {
+    background-color: rgb(247, 242, 229);
 }
 
 #viewerDate {

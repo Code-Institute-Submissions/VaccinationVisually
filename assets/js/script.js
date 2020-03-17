@@ -126,7 +126,7 @@ var items = new vis.DataSet([
     },
     {
         title: "First Viral Vaccine",
-        description: "Louis Pasteur develops the first live attenuated viral vaccine by using dried brain tissue inactivated with formaldehyde, thus providing immunity to rabies for dogs.",
+        description: "Louis Pasteur develops the first live attenuated viral vaccine by using dried brain tissue inactivated with formaldehyde, thus providing immunity to rabies for dogs. This proves to be incredibly important for young Joseph Meister the following year, in 1885",
         itemDate: "1884",
         itemImage: "assets/images/id14_viral-vaccine.jpg",
         ref: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4659912/",
