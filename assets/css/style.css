@@ -130,7 +130,7 @@ main {
 #zoomOut {
     background-color: #BB4D00;
     width: 8rem;
-    padding: 1rem;
+    padding: 0.25rem;
     margin-left: 2rem;
     margin-right: 2rem;
     font-size: 1rem;
@@ -361,8 +361,8 @@ input[type=range]:focus::-ms-fill-upper {
 /* Collaborate form */
 #formContainer {
     border: solid 3px #FBBA72;
-    max-width: 768px;
-    margin: 60px auto;
+    max-width: 560px;
+    margin: 160px auto;
     position: relative;
 }
 
