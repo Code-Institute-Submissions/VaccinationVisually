@@ -105,6 +105,7 @@ main {
     font-size: 1rem;
 }
 
+
 .page-footer {
     color: #FBBA72;
 }
@@ -129,7 +130,7 @@ main {
 #zoomOut {
     background-color: #BB4D00;
     width: 8rem;
-    padding: 1rem;
+    padding: 0.25rem;
     margin-left: 2rem;
     margin-right: 2rem;
     font-size: 1rem;
@@ -305,6 +306,7 @@ input[type=range]:focus::-ms-fill-upper {
     background-color: rgb(247, 242, 229);
     border: hidden;
     border-radius: 10px;
+
 }
 
 .card-title {
@@ -316,18 +318,19 @@ input[type=range]:focus::-ms-fill-upper {
     display: inline-block;
     margin-left: 0px;
     justify-content: right;
-    background-color: rgb(247, 242, 229);
-    border-radius: 10px;
+    background-color: rgb(242, 168, 94);
+    /* border-radius: 10px; */
     border: hidden;
 }
 
-.card-footer {
+#descriptionBlock {
     background-color: rgb(247, 242, 229);
-    padding: 5px;
-    margin: none;
+}
+
+#viewerDate {
     font-size: 1.1rem;
     font-weight: bold;
-    border: hidden;
+    margin-bottom: 5px;
 }
 
 .desc-text {
@@ -342,18 +345,14 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 #itemImage {
-    margin-top: 10px;
-    background-color: rgb(247, 242, 229);
-    border-radius: 10px;
+    /* padding-top: 0px !important;
+    background-color: rgb(105, 30, 6); */
     border: hidden;
 }
 
 #itemImage > img {
-    padding-top: 10px;
-    justify-self: auto;
-    margin-right: -10%;
+    border-radius: 10px;
 }
-
 
 
 /* Add scrollbar for item viewer description card */
@@ -363,4 +362,201 @@ input[type=range]:focus::-ms-fill-upper {
     overflow-y: auto;
 }
 
-/* additional styling for the itemImage */
+/* Collaborate form */
+#formContainer {
+    border: solid 3px #FBBA72;
+    max-width: 560px;
+    margin: 160px auto;
+    position: relative;
+}
+
+form {
+    padding: 37.5px;
+    margin: 50px 0;
+}
+
+#formContainer > h1 {
+    color: #FBBA72;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.underline {
+    border-bottom: solid 2px #FBBA72;
+    margin: -0.512em auto;
+    width: 550px;
+}
+
+.icon_wrapper {
+    margin: 50px auto 0;
+    width: 100%;
+}
+
+.icon {
+    display: block;
+    fill: #FBBA72;
+    height: 50px;
+    margin: 0 auto;
+    width: 50px;
+}
+
+.email {
+    float: right;
+    width: 45%;
+}
+
+input[type='text'],
+[type='email'],
+select,
+textarea {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #FBBA72;
+    color: #FBBA72;
+    font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+input[type='text']:focus,
+[type='email']:focus,
+textarea:focus {
+    outline: none;
+    padding: 0 0 0.875em 0;
+}
+
+.message {
+    float: none;
+}
+
+.name {
+    float: left;
+    width: 45%;
+}
+
+select {
+    background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.subject {
+    width: 100%;
+}
+
+.eventTitle {
+    width: 100%;
+}
+
+textarea {
+    line-height: 150%;
+    height: 150px;
+    resize: none;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+    color: #FBBA72;
+}
+
+:-moz-placeholder {
+    color: #FBBA72;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #FBBA72;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #FBBA72;
+}
+
+#form_button {
+    background: none;
+    border: solid 2px #FBBA72;
+    color: #FBBA72;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#form_button:hover {
+    background: #b44006;
+    color: #F2F3EB;
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+        margin: 20px auto;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    .underline {
+        width: 68px;
+    }
+
+    #form_button {
+        padding: 15px 25px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    .icon {
+        height: 35px;
+        width: 35px;
+    }
+
+    .underline {
+        width: 53px;
+    }
+
+    input[type='text'],
+    [type='email'],
+    select,
+    textarea {
+        font-size: 0.875em;
+    }
+}
