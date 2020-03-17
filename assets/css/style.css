@@ -290,7 +290,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 /* cards */
 .card {
-    background-color: rgb(222, 155, 85);
+    background-color: rgb(219, 202, 167);
         font-family: Cambria,
         Cochin,
         Georgia,
@@ -331,7 +331,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .desc-text {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     padding-bottom: 0.5rem;
     margin-right: 3rem;
 }
@@ -349,6 +349,8 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 #itemImage > img {
+    padding-top: 10px;
+    justify-self: auto;
     margin-right: -10%;
 }
 
