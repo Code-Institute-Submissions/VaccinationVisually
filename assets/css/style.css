@@ -578,3 +578,7 @@ textarea {
         font-size: 0.875em;
     }
 }
+
+.submit {
+    text-align: center;
+}

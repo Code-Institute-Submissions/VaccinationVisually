@@ -192,15 +192,15 @@ var items = new vis.DataSet([
 // Configuration for the Timeline
 var options = {
     template: template,
-    start: '001854-01-01',
-    end: '001895-01-01',
+    start: '1854-01-01',
+    end: '1895-01-01',
     autoResize: true,
     height: '500px',
     width: '100%',
     align: 'center',
     margin: { item: 20 },
     type:'point',
-    timeAxis: { scale: 'year', step: 25 },
+    timeAxis: { scale: 'year', step: 5 },
     hiddenDates: { start: '0100-01-01 00:00:00', end: '1000-01-01 00:00:00'  }
 };
 
