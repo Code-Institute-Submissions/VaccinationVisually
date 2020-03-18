@@ -48,8 +48,8 @@ Parents who are interested in vaccination as it relates to their children and wa
 -I want to see visual images incorporated within the timeline as this can help with understanding the event, provide talking points for discussion or to aid in recall, if this were used in a research situation
 
 Design - using these requirements, a wireframe was created in Balsamiq mockups 3, then a colour scheme was chosen before creating a prototype in Sketch.  
-[View the wireframe here.](https://drive.google.com/open?id=1PtDDZF3UihQ7iBGl2shMcdwPPNM8xy65)
-[View the colour palette here.](https://drive.google.com/open?id=1Z92Ij7JmWBHzj4OH9vzUsAubB9de6C2L)
+* [View the wireframe here.](https://drive.google.com/open?id=1PtDDZF3UihQ7iBGl2shMcdwPPNM8xy65)
+* [View the colour palette here.](https://drive.google.com/open?id=1Z92Ij7JmWBHzj4OH9vzUsAubB9de6C2L)
 
 ## Installation
 The site is a simple, one page web application and may be installed on a stand alone server or forked to change it's purpose.
@@ -72,7 +72,7 @@ To install:
 Data are stored in JSON format with options configured in the vis-timeline script.js file.
 
 ### Google Forms Integration
-The application includes a submission form so that users may collaborate by suggesting events to add to the timeline.  This is an active form which has been integrated with the site's contact form.  Thanks to DeveloperDrive for instructions on this.  If you are installing this application yourself, [please see these instructions here.}(https://www.developerdrive.com/add-google-forms-static-site/)
+The application includes a submission form so that users may collaborate by suggesting events to add to the timeline.  This is an active form which has been integrated with the site's contact form.  Thanks to DeveloperDrive for instructions on this.  If you are installing this application yourself, [please see these instructions here.](https://www.developerdrive.com/add-google-forms-static-site/)
 
 ## Testing
 This site has been tested and verifed on:
@@ -101,9 +101,9 @@ The operating system.
 
 ## Guides / Resources
 Visjs Timeline 
-[Vis - Documentation for Timeline can be found here](https://visjs.github.io/vis-timeline/docs/timeline/)
-[Vis - Examples for Timeline can be found here](https://visjs.github.io/vis-timeline/examples/timeline/)
-[Handlebars HTML template documenation can be found here](http://handlebarsjs.com/guide/#what-is-handlebars)
+* [Vis - Documentation for Timeline can be found here](https://visjs.github.io/vis-timeline/docs/timeline/)
+* [Vis - Examples for Timeline can be found here](https://visjs.github.io/vis-timeline/examples/timeline/)
+* [Handlebars HTML template documenation can be found here](http://handlebarsjs.com/guide/#what-is-handlebars)
 
 ## References and Credits
 Thank you to the below resources and credits
@@ -135,6 +135,6 @@ https://www.historyofvaccines.org
 
 ### Code Help
 Big thank you to those developers out there who freely provide their time to help others!
-https://github.com/almende/vis
-https://codepen.io/jean2607
-https://css-tricks.com/
+* https://github.com/almende/vis
+* https://codepen.io/jean2607
+* https://css-tricks.com/
