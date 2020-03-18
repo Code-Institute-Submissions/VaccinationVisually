@@ -83,8 +83,8 @@ main {
     color: #F7F2E4;
 }
 
-.introTextBlock > img {
-    height: 50px;
+.introTextBlock > a > img {
+    height: 100px;
 }
 
 .navbar-brand {
