@@ -143,7 +143,8 @@ main {
 .left-btn,
 .right-btn {
     width: 4rem;
-    border: 2px, solid, #FBBA72;
+    border-style: solid;
+    border-width: 1px;
     background-color: #BB4D00;
     background-image: url("../images/angle-right-solid.svg");
     background-repeat: no-repeat;
@@ -207,7 +208,7 @@ input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
     height: 8.4px;
     cursor: pointer;
-    animation-timing-function: 0.2s;
+    animation-timing-function: ease;
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     background: #BB4D00;
     border-radius: 1.3px;
@@ -234,7 +235,7 @@ input[type=range]::-moz-range-track {
     width: 100%;
     height: 8.4px;
     cursor: pointer;
-    /* animation-timing-function: 0.2s; */
+    animation-timing-function: ease;
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     background: #BB4D00;
     border-radius: 1.3px;
@@ -255,7 +256,7 @@ input[type=range]::-ms-track {
     width: 100%;
     height: 8.4px;
     cursor: pointer;
-    /* animation-timing-function: 0.2s; */
+    animation-timing-function: ease;
     background: transparent;
     border-color: transparent;
     border-width: 16px 0;
@@ -307,7 +308,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .card-columns {
     columns: 2;
-    column-gap: 0.5 rem;
+    column-gap: 10px;
     background-color: rgb(247, 242, 229);
     border: hidden;
     border-radius: 10px;
