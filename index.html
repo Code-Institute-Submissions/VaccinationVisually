@@ -13,8 +13,6 @@
         <!--Bootstrap -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     type="text/css" />
-    <!-- Jquery -->
-    <!-- <script src="jquery-3.4.1.min.js"></script> -->
 		<!-- Custom CSS -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 		<!-- handlebars (for template) -->
@@ -29,22 +27,15 @@
     </head>
     <body>
       <nav class="navbar navbar-expand-lg">
-        <!-- <img src="assets/images/Vv.png" width="30" height="30" alt=""> -->
-          <a href="#" class="navbar-brand nav-item active">VaccinationVisually</a>
+        <a href="#" class="navbar-brand nav-item active">VaccinationVisually</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <!-- <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#formContainer">Collaborate</a>
             </li>      
-          <!-- <li class="nav-item">
-              <a class="nav-link" href="#">References</a>
-            </li> -->
         </ul>
         </div>
       </nav>
@@ -61,9 +52,9 @@
       <!-- Item Viewer -->
         <div class="flexContainer">
           <div id="viewWindow" class="card text-center">
-              <div class="card-body" id="itemImage">
+            <div class="card-body" id="itemImage">
                 <img id="imageSrc" src="assets/images/id0_default.jpg" alt="Card image">
-              </div>
+          </div>
             <div class="card-body" id="descriptionBlock">
               <h1 class="card-title" id="viewerTitle">Welcome!</h1>
               <p class="card-text-center desc-text" id="viewerDesc">Use the timeline's controls below, or drag and zoom to see various key events in the history of vaccines. You will learn about
@@ -105,10 +96,6 @@
               </path>
             </svg>
           </div>
-          <!-- Redirect to custom thank you page
-          <script type="text/javascript">var submitted = false;</script>
-          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-            onload="if(submitted) {window.location='../thankyou.html';}"></iframe> -->
           <!-- contact form -->
           <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdwW_cqZAElyPt2Ip-ExrKovTIJxUO-vNA_D8ZFpS17u3GRLA/formResponse" method="post" id="contact_form" > <!--Linked to Google Form-->
             <div class="name">
@@ -131,7 +118,7 @@
             <div class="submit">
               <input type="submit" value="Send Message" id="form_button" />
             </div>
-          </form><!-- // End form -->
+          </form>
         </div>
     <!-- Footer -->
     <footer class="page-footer font-small">
@@ -141,7 +128,7 @@
       </div>
       <!-- Copyright -->
     </footer>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js" defer></script>
         <!--Popper and Bootstrap-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
