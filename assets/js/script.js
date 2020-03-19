@@ -9,10 +9,10 @@ var container = document.getElementById('visualization');
 var items = new vis.DataSet([
     {
         title: "The Father of Medicine",
-        description: "Hippocrates first identifies mumps, diphtheria, epidemic jaundice, and other conditions.",
+        description: "Hippocrates - one of the most important physicians in the history of medicine, is the first to identify mumps, diphtheria, epidemic jaundice, and other conditions.  The Hippocratic School of Medicine is born",
         itemDate: "400 BCE",
         itemImage: "assets/images/id1_hippocrates.jpg",
-        ref: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4659912/#B23",
+        ref: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4950906/",
         start: "-000400-01-01",
         id: 1
     },
@@ -27,16 +27,16 @@ var items = new vis.DataSet([
 },
     {
         title: "Variolation Arrives in the West",
-        description: "The variolation process arrives in Turkey around 1672 CE.",
+        description: "The variolation process arrives in Turkey around 1672 CE.  This word variolation, from the Latin 'varus', meaning marked skin is a term used interchangably with immunization. In simple terms, material is taken from one infected individual and given to another in the hope that a mild but protective infection would result.",
         itemDate: "1672",
         itemImage: "assets/images/id3_turkey.jpg",
-        ref: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4659912/#B23",
+        ref: "https://www.frontiersin.org/articles/10.3389/fpubh.2015.00269/full",
         start: '1672-01-01',
         id: 3
     },
     {
         title: "Early Varioloation in Great Britain",
-        description: "In the early 18th century, the varioloation process (known at that time as Inoculation), was introduced in Great Britain in order to help protect against smallpox.",
+        description: "In the early 18th century, the varioloation process (known at that time as Inoculation), was introduced in Great Britain in order to help protect against smallpox. Lady Mary Wortley Montagu (1689-1762) had her son variolated in Constantinople by Dr. Charles Maitland. Lady Montagu, whose husband was ambassador to Turkey, had been disfigured by smallpox around 1715. She had heard about variolation upon her arrival in Turkey, and was anxious that her six-year-old son, Edward, have the procedure.",
         itemDate: "1721",
         itemImage: "assets/images/id4_variolation.jpg",
         ref: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4659912/#B23",
@@ -81,7 +81,7 @@ var items = new vis.DataSet([
     },
     {
         title: "Pasteur Begins His Work on Anthrax",
-        description: "Having started his investigations on Athrax in response to a recent outbreak, Pasteur presents a paper to the French Academy of Sciences on the subject, representing his first work in the field of medicine.",
+        description: "Having started his investigations on Anthrax in response to a recent outbreak, Pasteur presents a paper to the French Academy of Sciences on the subject, representing his first work in the field of medicine. Pastuer would go on to produce the first vaccine for ovine (sheep) anthrax in 1881, through the culture of Bacillus anthracis at 43 degrees, and attenuated by oxygen.",
         itemDate: "1877",
         itemImage: "assets/images/id9_pasteur-anthrax.jpg",
         ref: "https://www.sciencehistory.org/historical-profile/louis-pasteur",
@@ -99,7 +99,7 @@ var items = new vis.DataSet([
     },
     {
         title: "Work on Rabies Vaccine Begins",
-        description: "Having been sent a number of samples from dogs, Pasteur began working on a method to control Rabies.  Working with rabbits, Pasteur was able to radicaly shorten the period of time between infection and signs of symptoms.",
+        description: "Having been sent a number of samples from dogs, Pasteur began working on a method to control Rabies.  Working with rabbits, Pasteur was able to shorten the period of time between infection and symptoms. One of the difficulties with studying Rabies is that the time between introduction of the infectious agent and signs of the disease varies greatly. Pasteur was able to radically shorten this period and continued to work with Rabies until his successful vaccination in 1885.",
         itemDate: "1880",
         itemImage: "assets/images/id11_pasteur-rabies.jpg",
         ref: "https://www.sciencehistory.org/historical-profile/louis-pasteur",
@@ -153,7 +153,7 @@ var items = new vis.DataSet([
     },
     {
         title: "First Diptheria Treatments",
-        description: "Shibasaburo Kitasato and Emil von Behring, using a heat-treated diphtheria toxin, immunized guinea pigs against diptheria toxin.  Von Behring would later go on to win the first ever Nobel prize in medicine for his work on diptheria.",
+        description: "Shibasaburo Kitasato and Emil von Behring, using a heat-treated diphtheria toxin, immunized guinea pigs against diptheria toxin.  Kitasato, who had studied under Robert Koch, became a fellow at the Institute for Infectious Diseases in Tokyo, however, when this was incorporated into Tokyo Imperial University in 1914, he resigned in protest and founded the Kitasato Institute.  Von Behring would later go on to win the first ever Nobel prize in medicine for his work on diptheria.",
         itemDate: "1890",
         itemImage: "assets/images/id17_vonbehring-kitasato.jpg",
         ref: "https://jnnp.bmj.com/content/71/1/62",
@@ -162,7 +162,7 @@ var items = new vis.DataSet([
     },
     {
         title: "Chickenpox and Shingles Linked",
-        description: "Hungarian pediatrician James Bokay described cases of individuals who had contracted chickenpox after coming in contact with shingles.  This connection was not confirmed for almost thirty years when Kundratitz demonstrated that inoculating children with fluid from shingles patients resulted in chickenpox.",
+        description: "Hungarian pediatrician James Bokay described cases of individuals who had contracted chickenpox after coming in contact with shingles.  This connection was not confirmed for almost thirty years when Kundratitz demonstrated that inoculating children with fluid from shingles patients resulted in chickenpox. Curiously, one cannot get shingles from someone else with shingles or chickenpox. However, you can get chickenpox from someone with shingles if you have not had chickenpox before.",
         itemDate: "1892",
         itemImage: "assets/images/id18_chickenpox.jpg",
         ref: "https://www.historyofvaccines.org/content/chickenpox-relationship-between-chickenpox-and-shingles-suggested",
@@ -171,7 +171,7 @@ var items = new vis.DataSet([
     },
     {
         title: "First U.S. Polio Epidemic",
-        description: "The first recorded Polio outbreak in the United States.  The state of vermont issue an emergency as 18 people die and 132 are left with permanent paralysis, after the outbreak in Rutland County",
+        description: "The first recorded Polio outbreak in the United States.  The state of vermont issue an emergency as 18 people die and 132 are left with permanent paralysis, after the outbreak in Rutland County.  Charles Caverly, MD, noted the appearance of acute nervous system disease in the county. He was one of the first physicians to recognize that polio could occur with or without paralysis. He did not assume, however, that the disease could be spread from person to person. The contagious nature of polio would be established in 1905",
         itemDate: "1894",
         itemImage: "assets/images/id19_polio-epidemic.jpg",
         ref: "https://www.historyofvaccines.org/content/chickenpox-relationship-between-chickenpox-and-shingles-suggested",
@@ -180,7 +180,7 @@ var items = new vis.DataSet([
     },
     {
         title: "Louis Pasteur Dies",
-        description: "Louis Pasteur, one of the greatest scientists of his time, passes away from stroke.  Having discovered the process of food preservation that bears his name, his work was also key in creating vaccines for anthrax and rabies.",
+        description: "Louis Pasteur, one of the greatest scientists of his time, passes away from stroke.  Having discovered the process of food preservation that bears his name, his work was also key in creating vaccines for anthrax and rabies. Pastuer will be remembered for all time due to his work and the lives he helped save.  While Robert Koch may have discovered vaccination, it was Pasteur who invented vaccines.",
         itemDate: "Septemeber 1895",
         itemImage: "assets/images/id20_louis-pasteur.jpg",
         ref: "https://www.biography.com/scientist/louis-pasteur",
