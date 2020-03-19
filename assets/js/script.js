@@ -256,11 +256,11 @@ timeline.on('select', function (properties) {
     var viewDate = clickedItem['itemDate'];
     var viewImg = clickedItem['itemImage'];
     var viewLink = clickedItem['ref'];
-    console.log(viewTitle);
-    console.log(viewDesc);
-    console.log(viewDate);
-    console.log(viewImg);
-    console.log(viewLink);
+    // console.log(viewTitle);
+    // console.log(viewDesc);
+    // console.log(viewDate);
+    // console.log(viewImg);
+    // console.log(viewLink);
 
     document.getElementById('viewerTitle').innerHTML = viewTitle;
     document.getElementById('viewerDesc').innerHTML = viewDesc;
